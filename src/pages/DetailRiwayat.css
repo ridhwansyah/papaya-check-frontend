@@ -1,0 +1,151 @@
+.detail-page {
+  min-height: 100vh;
+  background: #FFFBF2;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-main {
+  max-width: 720px;
+  margin: 28px auto;
+  padding: 0 24px;
+  width: 100%;
+  flex: 1;
+}
+
+.btn-kembali {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 2px solid #FFD166;
+  background: #fff;
+  color: #FF9A2E;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.btn-kembali:hover {
+  background: #FFF8E7;
+}
+
+.detail-loading {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.detail-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  border-top: 4px solid #FFB347;
+}
+
+.detail-card.detail-matang { border-top-color: #FFB347; }
+.detail-card.detail-mentah { border-top-color: #6DBE6D; }
+.detail-card.detail-setengah_matang { border-top-color: #FF8C42; }
+.detail-card.detail-bukan_pepaya { border-top-color: #E05252; }
+
+.detail-foto {
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  background: #FFFAF0;
+  display: block;
+}
+
+.detail-info {
+  padding: 24px;
+}
+
+.detail-kelas {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2D2A20;
+  margin-bottom: 16px;
+}
+
+/* CONFIDENCE BAR */
+.confidence-bar-wrap {
+  background: #F9F5EC;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+}
+
+.confidence-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.confidence-bar {
+  background: #E8E0D0;
+  border-radius: 999px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #FF9A2E, #FFD166);
+  border-radius: 999px;
+  transition: width 0.6s ease;
+}
+
+/* META */
+.detail-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.detail-meta-label {
+  font-size: 12px;
+  color: #aaa;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-meta-value {
+  font-size: 14px;
+  color: #2D2A20;
+  word-break: break-all;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .detail-main {
+    padding: 0 16px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-main {
+    padding: 0 12px;
+  }
+
+  .detail-kelas {
+    font-size: 20px;
+  }
+
+  .detail-info {
+    padding: 16px;
+  }
+}
