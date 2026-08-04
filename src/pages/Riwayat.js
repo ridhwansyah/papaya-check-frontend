@@ -43,6 +43,7 @@ function Riwayat() {
 
   useEffect(() => {
     fetchRiwayat();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleDelete = async () => {
