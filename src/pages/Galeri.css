@@ -47,9 +47,61 @@
 .galeri-desc {
   font-size: 13px;
   color: #999;
+  margin-bottom: 20px;
+}
+
+/* INFO CARDS */
+.galeri-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   margin-bottom: 24px;
 }
 
+.galeri-info-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border-left: 4px solid #FFB347;
+}
+
+.galeri-info-text {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.galeri-info-refs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.galeri-info-ref-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #FF9A2E;
+}
+
+.galeri-info-ref-link {
+  font-size: 11px;
+  color: #FF9A2E;
+  text-decoration: none;
+  border: 1px solid #FFD166;
+  border-radius: 4px;
+  padding: 2px 7px;
+  transition: background 0.2s;
+}
+
+.galeri-info-ref-link:hover {
+  background: #FFF8E7;
+}
+
+/* GALERI GRID */
 .galeri-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -72,13 +124,28 @@
   display: block;
 }
 
+.galeri-card-info {
+  padding: 12px;
+  background: #FFFBF2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .galeri-label {
   text-align: center;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   color: #2D2A20;
-  padding: 10px 8px;
-  background: #FFFBF2;
+}
+
+.galeri-card-desc {
+  font-size: 13px;
+  color: #0d0d0d;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left;
 }
 
 /* RESPONSIVE */
@@ -101,6 +168,10 @@
 
   .galeri-title {
     font-size: 17px;
+  }
+
+  .galeri-info-card {
+    padding: 14px 16px;
   }
 }
 

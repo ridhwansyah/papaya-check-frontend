@@ -443,3 +443,51 @@ body {
 .btn-beranda:hover {
   background: #FFE8A0;
 }
+
+/* RESULT DESC */
+.result-desc-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  text-align: left;
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+/* REFERENSI */
+.result-referensi {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+  justify-content: flex-start;
+}
+
+.result-referensi-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #FF9A2E;
+}
+
+.result-referensi-link {
+  font-size: 11px;
+  color: #FF9A2E;
+  text-decoration: none;
+  border: 1px solid #FFD166;
+  border-radius: 4px;
+  padding: 2px 7px;
+  transition: background 0.2s;
+}
+
+.result-referensi-link:hover {
+  background: #FFF8E7;
+}
+
+/* BUNGKUSAN DESC + REFERENSI */
+.result-desc-box {
+  background: #F9F5EC;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  text-align: left;
+}

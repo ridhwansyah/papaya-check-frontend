@@ -7,10 +7,22 @@ import { db } from '../firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 const CLASS_LABELS = {
-  matang: { label: 'Matang' },
-  mentah: { label: 'Mentah' },
-  setengah_matang: { label: 'Setengah Matang' },
-  bukan_pepaya: { label: 'Bukan Pepaya' },
+  matang: {
+    label: 'Matang',
+    desc: 'Pepaya pada gambar termasuk dalam kelas matang, yang ditandai dengan dominasi warna kuning (lebih dari 75%) pada permukaan kulit buah.',
+  },
+  mentah: {
+    label: 'Mentah',
+    desc: 'Pepaya pada gambar termasuk dalam kelas mentah, yang ditandai dengan dominasi warna hijau (lebih dari 75%) pada permukaan kulit buah.',
+  },
+  setengah_matang: {
+    label: 'Setengah Matang',
+    desc: 'Pepaya pada gambar termasuk dalam kelas setengah matang, dengan warna kuning pada permukaan kulit buah sekitar 25–74%.',
+  },
+  bukan_pepaya: {
+    label: 'Bukan Pepaya',
+    desc: null,
+  },
 };
 
 const ALLOWED_TYPES = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
@@ -238,6 +250,20 @@ function Klasifikasi() {
         {result && info && (
           <div className={`result-card result-${result.kelas}`}>
             <h2 className="result-label">{info.label}</h2>
+{(info.desc || result.kelas !== 'bukan_pepaya') && (
+  <div className="result-desc-box">
+    {info.desc && (
+      <p className="result-desc-text">{info.desc}</p>
+    )}
+    {result.kelas !== 'bukan_pepaya' && (
+      <div className="result-referensi">
+        <span className="result-referensi-label">Referensi:</span>
+        <a href="https://repositori.uma.ac.id/jspui/bitstream/123456789/20291/1/178220009-%20Ahmad%20Daman%20Huri%20Rangkuti%20Fulltext.pdf" target="_blank" rel="noreferrer" className="result-referensi-link">[1]</a>
+        <a href="https://journal.ipb.ac.id/jurnalagronomi/article/view/1678" target="_blank" rel="noreferrer" className="result-referensi-link">[2]</a>
+      </div>
+    )}
+  </div>
+)}
             {result.kelas === 'bukan_pepaya' && (
               <p className="bukan-pepaya-warning">
                 Gambar tidak dikenali sebagai pepaya. Pastikan gambar Anda adalah buah pepaya dan terlihat jelas.
