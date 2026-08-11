@@ -237,7 +237,7 @@ body {
   font-size: 13px;
   color: #C0392B;
   margin-bottom: 16px;
-  text-align: left;
+  text-align: justify;
 }
 
 /* CONFIDENCE BAR */
@@ -449,7 +449,7 @@ body {
   font-size: 13px;
   font-weight: 500;
   color: #555;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 8px;
   line-height: 1.7;
 }
