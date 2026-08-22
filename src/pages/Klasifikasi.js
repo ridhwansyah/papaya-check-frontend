@@ -17,7 +17,7 @@ const CLASS_LABELS = {
   },
   setengah_matang: {
     label: 'Setengah Matang',
-    desc: 'Pepaya pada gambar termasuk dalam kelas setengah matang, dengan warna kuning pada permukaan kulit buah sekitar 25–74%.',
+    desc: 'Pepaya pada gambar termasuk dalam kelas setengah matang, dengan warna kuning pada permukaan kulit buah berkisar antara 25-74%. Apabila persentase warna kuning kurang dari 25%, pepaya akan tergolong ke dalam kelas mentah, sedangkan apabila lebih dari 74%, pepaya akan tergolong ke dalam kelas matang.',
   },
   bukan_pepaya: {
     label: 'Bukan Pepaya',
@@ -116,7 +116,7 @@ function Klasifikasi() {
     formData.append('file', selectedFile);
     try {
       const [response, base64Foto] = await Promise.all([
-        fetch('https://papayacheck.my.id/predict', { method: 'POST', body: formData }),
+        fetch('http://127.0.0.1:5000/predict', { method: 'POST', body: formData }),
         compressImage(selectedFile),
       ]);
       const data = await response.json();

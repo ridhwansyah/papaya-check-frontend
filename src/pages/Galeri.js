@@ -14,7 +14,7 @@ const GALERI_DATA = [
   {
     label: 'Setengah Matang',
     img: imgSetengahMatang,
-    desc: 'Pepaya pada gambar termasuk dalam kelas setengah matang, dengan warna kuning pada permukaan kulit buah sekitar 25–74%.',
+    desc: 'Pepaya pada gambar termasuk dalam kelas setengah matang, dengan warna kuning pada permukaan kulit buah berkisar antara 25-74%. Apabila persentase warna kuning kurang dari 25%, pepaya akan tergolong ke dalam kelas mentah, sedangkan apabila lebih dari 74%, pepaya akan tergolong ke dalam kelas matang.',
   },
   {
     label: 'Mentah',
@@ -34,6 +34,13 @@ const INFO_CARDS = [
   },
   {
     id: 'info2',
+    content: 'Pepaya California memiliki kandungan gizi yang bermanfaat bagi kesehatan. Menurut Kurniawan (2022), pepaya memiliki kandungan vitamin C, kalium, dan asam folat yang menjadikannya buah yang bermanfaat bagi kesehatan. Melalui pengujian kuantitatif menggunakan metode spektrofotometri UV-Vis, penelitian tersebut menunjukkan bahwa buah Pepaya California memiliki kadar vitamin C sebesar 10,05%.',
+    refs: [
+      { label: '[1]', url: 'https://repository.umkla.ac.id/2838/' },
+    ],
+  },
+  {
+    id: 'info3',
     content: 'Menurut Kaukab, Mishra, dan Sunita (2025), CNN dapat digunakan untuk mengklasifikasikan tingkat kematangan buah dengan menganalisis fitur visual seperti warna, tekstur, dan bentuk. Dalam prosesnya, CNN secara otomatis mengekstraksi fitur secara bertingkat dari citra, seperti perubahan warna, variasi tekstur, dan karakteristik permukaan buah yang menjadi indikator tingkat kematangan. Konsep tersebut diterapkan pada model yang digunakan dalam website ini untuk mengenali tingkat kematangan pepaya, yaitu mentah, setengah matang, dan matang.',
     refs: [
       { label: '[1]', url: 'https://www.researchgate.net/publication/403803029_Application_of_Convolutional_Neural_Networks_for_Ripeness_Classification_of_Fruits' },
