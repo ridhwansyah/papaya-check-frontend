@@ -26,17 +26,17 @@ const GALERI_DATA = [
 const INFO_CARDS = [
   {
     id: 'info1',
-    content: 'Pepaya California merupakan varietas pepaya yang memiliki nama varietas Callina (IPB 9) dan merupakan hasil pemuliaan dari Institut Pertanian Bogor (IPB). Nama "California" bukan menunjukkan asal buah dari California, Amerika Serikat, tetapi merupakan nama yang lebih populer digunakan di pasaran. IPB menjelaskan bahwa Pepaya Callina IPB 9 yang masuk ke swalayan kemudian "diplesetkan menjadi Pepaya California", sehingga masyarakat menganggapnya berasal dari Amerika, padahal varietas tersebut merupakan hasil pemuliaan lokal dari IPB.',
+    content: 'Pepaya California memiliki kandungan gizi yang bermanfaat bagi kesehatan. Menurut Kurniawan (2022), pepaya memiliki kandungan vitamin C, kalium, dan asam folat yang menjadikannya buah yang bermanfaat bagi kesehatan. Melalui pengujian kuantitatif menggunakan metode spektrofotometri UV-Vis, penelitian tersebut menunjukkan bahwa buah Pepaya California memiliki kadar vitamin C sebesar 10,05%.',
     refs: [
-      { label: '[1]', url: 'https://www.ipb.ac.id/news/index/2011/03/hatta-radjasa-cicipi-callina-02b9b55102f4d64a5b2eaa6a710390db/' },
-      { label: '[2]', url: 'https://www.ipb.ac.id/news/index/2010/10/peluncuran-varietas-baru-ipb-sekaligus-curhat-petani-e37601af38eea630845dcdd1276a47d8/' },
+      { label: '[1]', url: 'https://repository.umkla.ac.id/2838/' },
     ],
   },
   {
     id: 'info2',
-    content: 'Pepaya California memiliki kandungan gizi yang bermanfaat bagi kesehatan. Menurut Kurniawan (2022), pepaya memiliki kandungan vitamin C, kalium, dan asam folat yang menjadikannya buah yang bermanfaat bagi kesehatan. Melalui pengujian kuantitatif menggunakan metode spektrofotometri UV-Vis, penelitian tersebut menunjukkan bahwa buah Pepaya California memiliki kadar vitamin C sebesar 10,05%.',
+    content: 'Pepaya California merupakan varietas pepaya yang memiliki nama varietas Callina (IPB 9) dan merupakan hasil pemuliaan dari Institut Pertanian Bogor (IPB). Nama "California" bukan menunjukkan asal buah dari California, Amerika Serikat, tetapi merupakan nama yang lebih populer digunakan di pasaran. IPB menjelaskan bahwa Pepaya Callina IPB 9 yang masuk ke swalayan kemudian "diplesetkan menjadi Pepaya California", sehingga masyarakat menganggapnya berasal dari Amerika, padahal varietas tersebut merupakan hasil pemuliaan lokal dari IPB.',
     refs: [
-      { label: '[1]', url: 'https://repository.umkla.ac.id/2838/' },
+      { label: '[1]', url: 'https://www.ipb.ac.id/news/index/2011/03/hatta-radjasa-cicipi-callina-02b9b55102f4d64a5b2eaa6a710390db/' },
+      { label: '[2]', url: 'https://www.ipb.ac.id/news/index/2010/10/peluncuran-varietas-baru-ipb-sekaligus-curhat-petani-e37601af38eea630845dcdd1276a47d8/' },
     ],
   },
   {
