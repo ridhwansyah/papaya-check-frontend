@@ -116,7 +116,7 @@ function Klasifikasi() {
     formData.append('file', selectedFile);
     try {
       const [response, base64Foto] = await Promise.all([
-        fetch('http://127.0.0.1:5000/predict', { method: 'POST', body: formData }),
+        fetch('https://papayacheck.my.id/predict', { method: 'POST', body: formData }),
         compressImage(selectedFile),
       ]);
       const data = await response.json();
